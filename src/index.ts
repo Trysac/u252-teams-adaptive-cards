@@ -1,20 +1,15 @@
-/**
- * Public entry point of @trysac/teams-adaptive-cards.
- *
- * Replace this placeholder with the utility's real API. Keep every export documented and covered by tests.
- */
-
-/**
- * Builds a greeting for `name`.
- *
- * @param name - Who to greet. Surrounding whitespace is ignored.
- * @returns The greeting, for example `"Hello, Ada!"`.
- * @throws {TypeError} When `name` is empty after trimming.
- */
-export function greet(name: string): string {
-  const trimmed = name.trim();
-  if (trimmed === "") {
-    throw new TypeError("name must not be empty");
-  }
-  return `Hello, ${trimmed}!`;
-}
+export { adaptiveCard, factSet, openUrl, textBlock, webhookMessage } from "./builders.js";
+export type { TeamsCardErrorCode } from "./error.js";
+export { TeamsCardError } from "./error.js";
+export type { SendEvent, Transport } from "./send.js";
+export { sendWebhook } from "./send.js";
+export type {
+  Action,
+  AdaptiveCard,
+  Attachment,
+  Element,
+  FactSet,
+  OpenUrlAction,
+  TeamsMessage,
+  TextBlock,
+} from "./types.js";
