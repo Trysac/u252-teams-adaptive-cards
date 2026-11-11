@@ -9,4 +9,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Added typed builders for Adaptive Cards 1.5 and a webhook sender with size validation and secret-safe errors.
 - Initial project structure from the factory utility template.
