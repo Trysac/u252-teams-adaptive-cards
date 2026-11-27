@@ -12,9 +12,15 @@ Hand-written Adaptive Card JSON is untyped and fails at send time; this library 
 
 ## Installation
 
-```bash
-npm install @trysac/teams-adaptive-cards
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
+```sh
+git clone https://github.com/Trysac/u252-teams-adaptive-cards.git
+cd u252-teams-adaptive-cards && npm ci && npm run build
+cd ../your-project && npm install ../u252-teams-adaptive-cards
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/teams-adaptive-cards"`.
 
 ## Usage
 
